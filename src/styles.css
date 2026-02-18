@@ -1,0 +1,122 @@
+:root {
+  font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
+  color: #e2e8f0;
+  background: #0b1020;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  background: radial-gradient(circle at top, #1f2937, #0b1020 45%);
+}
+
+.app-shell {
+  width: min(1200px, 96vw);
+  margin: 0 auto;
+  padding: 2rem 0 3rem;
+}
+
+.header h1 {
+  margin: 0 0 1rem;
+  font-size: clamp(1.5rem, 3vw, 2.2rem);
+  color: #f8fafc;
+}
+
+.view-switcher {
+  display: flex;
+  gap: 0.75rem;
+  margin-bottom: 1rem;
+}
+
+.view-switcher button {
+  background: #334155;
+  color: #e2e8f0;
+  border: 1px solid transparent;
+  padding: 0.6rem 1rem;
+  border-radius: 0.65rem;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.view-switcher button.active {
+  background: #0ea5e9;
+  border-color: #67e8f9;
+  color: #032036;
+}
+
+.panel {
+  background: rgba(15, 23, 42, 0.82);
+  border: 1px solid rgba(148, 163, 184, 0.25);
+  border-radius: 1rem;
+  padding: 1rem;
+  backdrop-filter: blur(4px);
+}
+
+.panel h2 {
+  margin: 0;
+}
+
+.subtitle {
+  margin-top: 0.35rem;
+  color: #cbd5e1;
+  font-size: 0.95rem;
+}
+
+.table-wrap {
+  margin-top: 1rem;
+  overflow-x: auto;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  min-width: 900px;
+}
+
+th,
+td {
+  border-bottom: 1px solid rgba(148, 163, 184, 0.28);
+  padding: 0.6rem;
+  text-align: center;
+}
+
+th {
+  background: rgba(30, 41, 59, 0.9);
+  color: #bae6fd;
+  position: sticky;
+  top: 0;
+}
+
+.team-name {
+  text-align: left;
+  font-weight: 700;
+  color: #f8fafc;
+}
+
+.rank {
+  font-weight: 700;
+  color: #22d3ee;
+}
+
+.total-points {
+  font-weight: 700;
+  color: #facc15;
+}
+
+input {
+  width: 80px;
+  background: #0f172a;
+  color: #f8fafc;
+  border: 1px solid #475569;
+  border-radius: 0.5rem;
+  padding: 0.4rem;
+}
+
+input:focus {
+  outline: 2px solid #0ea5e9;
+  border-color: #0ea5e9;
+}
